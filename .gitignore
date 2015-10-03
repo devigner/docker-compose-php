@@ -1,4 +1,4 @@
-*/log/*.log
+log/*/*
 mysql/databases/*
 .DS_Store
 !.gitkeep
