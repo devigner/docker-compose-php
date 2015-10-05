@@ -1,4 +1,5 @@
 log/*/*
-mysql/databases/*
+web/mysql/databases/*
 .DS_Store
 !.gitkeep
+

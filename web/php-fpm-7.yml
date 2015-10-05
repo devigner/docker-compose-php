@@ -5,4 +5,4 @@ phpfpm:
     - ./php-fpm-7/php-fpm.conf:/usr/local/etc/php-fpm.conf
     - ./php-fpm-7/php.ini:/usr/local/etc/php/php.ini
     - ./app:/var/www/html
-  	- ./log/php-fpm:/var/log/php-fpm
+    - ./log/php-fpm:/var/log/php-fpm

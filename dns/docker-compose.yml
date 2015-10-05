@@ -1,0 +1,20 @@
+# SKYNET
+
+skydns:
+  name: skydns
+  restart: always
+  image: crosbymichael/skydns
+  ports: 
+    - 172.17.42.1:53:53/udp
+  command: skydns -http 0.0.0.0:8080 -nameserver 8.8.8.8:53 -domain docker
+
+# SKYBOX
+skydock:
+  name: skydock
+  restart: always
+  image: crosbymichael/skydock
+  command: /go/bin/skydock -ttl 30 -environment dev -s /docker.sock -domain docker --name skydns
+  volumes:
+    - /var/run/docker.sock:/docker.sock
+
+
