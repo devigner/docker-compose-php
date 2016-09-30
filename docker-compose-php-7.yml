@@ -3,7 +3,7 @@
 phpfpm:
   restart: always
   extends:
-    file: php-fpm-5.6.yml
+    file: php-fpm-7.yml
     service: phpfpm
   links:
     - db:db
