@@ -1,4 +1,5 @@
-log/*/*
-mysql/databases/*
+.idea
 .DS_Store
-!.gitkeep
+.docker/images/proxy/*/*
+!.docker/images/proxy/*/.gitkeep
+.env

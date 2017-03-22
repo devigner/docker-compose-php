@@ -1,8 +1,0 @@
-
-phpfpm:
-  build: php-fpm-5.6
-  volumes:
-    - ./php-fpm-5.6/php-fpm.conf:/usr/local/etc/php-fpm.conf
-    - ./php-fpm-5.6/php.ini:/usr/local/etc/php/php.ini
-    - ./app:/var/www/html
-    - ./log/php-fpm:/var/log/php-fpm
